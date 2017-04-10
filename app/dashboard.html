@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <base href="/" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="sampleExampleApp">
+
+<div class="navbar navbar-default">
+  <p class="text-center"><strong>WEBSITE HEADER</strong></p>
+</div>
+<div class="container">
+  <div class="row content">
+    <div class="col-lg-3 col-md-3">
+      <ul class="list-unstyled">
+        <li><a href="home">Home</a></li>
+        <li><a href="courses">Courses</a></li>
+        <li><a href="students">Students</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-9 col-md-9">
+      <p class="text-center"><strong>WELCOME</strong></p>
+      <!--<ng-view></ng-view>-->
+      <div ng-view=""></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="text-center">Copyright 2017</p>
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/courses.js"></script>
+<script src="scripts/controllers/students.js"></script>
+<script src="scripts/controllers/home.js"></script>
+<!-- endbuild -->
+</body>
+</html>
